@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="post-entry">
+	<h2>{{ object.title }}</h2>
+	<p>by {{ object.author }} | {{ object.date }}</p>
+	<p>{{ object.body }}</p>
+</div>
+<p><a class="btn btn-primary btn-sm acitve" href="{% url 'post-edit' post.pk %}"> Edit </a><a class="btn btn-danger btn-sm active" href="{% url 'post-delete' post.pk %}">Delete</a></p>
+<p>Back to <a href="{% url 'post-list' %}">All posts</a></p>
+{% endblock content %}
