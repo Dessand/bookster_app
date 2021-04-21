@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     
     #3rd Party
     'crispy_forms',
+    'rest_framework',
     
     #Local apps
     'users.apps.UsersConfig',
